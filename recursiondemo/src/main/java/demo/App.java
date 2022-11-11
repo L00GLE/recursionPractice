@@ -25,4 +25,14 @@ public class App
         System.out.println("The result: is: " + result);
     
     }
+    
+    public static int powerN(int x, int n)
+    {
+        if (n != 0) {
+          return (x * powerN(x, n - 1));
+        }
+        else {
+            return 1;
+        }
+    }
 }
